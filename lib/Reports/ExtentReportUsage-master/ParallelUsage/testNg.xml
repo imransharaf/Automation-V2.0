@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteName" parallel="methods">
+    <test name="TestName" allow-return-values="true">
+        <classes>
+            <class name="SimpleFactoryUsage.Test001" />
+            <class name="SimpleFactoryUsage.Test002" />
+            <class name="ComplexFactoryUsage.Test001C"/>
+            <class name="ComplexFactoryUsage.Test002C" />
+            <class name="ParallelWithBaseTest.Test001P" />
+            <class name="ParallelWithBaseTest.Test002P" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SuiteName">
+              <span class="suite-name border-passed">SuiteName</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SuiteName">
+                    <span>testNg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SuiteName">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SuiteName">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SuiteName">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SuiteName">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SuiteName">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SuiteName">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods passed suite-SuiteName"> (hide)</a> <!-- hide-methods passed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods passed suite-SuiteName"> (show)</a> <!-- show-methods passed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content passed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ComplexFactoryUsage.Test001C" hash-for-method="complexTest001">complexTest001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ComplexFactoryUsage.Test001C" hash-for-method="complexTest002">complexTest002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ComplexFactoryUsage.Test002C" hash-for-method="complexTest003">complexTest003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ComplexFactoryUsage.Test002C" hash-for-method="complexTest004">complexTest004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="SimpleFactoryUsage.Test001" hash-for-method="simpleTest001">simpleTest001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="SimpleFactoryUsage.Test001" hash-for-method="simpleTest002">simpleTest002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="SimpleFactoryUsage.Test002" hash-for-method="simpleTest003">simpleTest003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="SimpleFactoryUsage.Test002" hash-for-method="simpleTest004">simpleTest004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ParallelWithBaseTest.Test001P" hash-for-method="test001">test001</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ParallelWithBaseTest.Test001P" hash-for-method="test002">test002</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ParallelWithBaseTest.Test002P" hash-for-method="test003">test003</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="ParallelWithBaseTest.Test002P" hash-for-method="test004">test004</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteName -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SuiteName" class="panel SuiteName">
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SimpleFactoryUsage.Test001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleTest001">
+                  </a> <!-- simpleTest001 -->
+                  <span class="method-name">simpleTest001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleTest002">
+                  </a> <!-- simpleTest002 -->
+                  <span class="method-name">simpleTest002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ParallelWithBaseTest.Test001P</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test001">
+                  </a> <!-- test001 -->
+                  <span class="method-name">test001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test002">
+                  </a> <!-- test002 -->
+                  <span class="method-name">test002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SimpleFactoryUsage.Test002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleTest003">
+                  </a> <!-- simpleTest003 -->
+                  <span class="method-name">simpleTest003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="simpleTest004">
+                  </a> <!-- simpleTest004 -->
+                  <span class="method-name">simpleTest004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ComplexFactoryUsage.Test001C</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="complexTest001">
+                  </a> <!-- complexTest001 -->
+                  <span class="method-name">complexTest001</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="complexTest002">
+                  </a> <!-- complexTest002 -->
+                  <span class="method-name">complexTest002</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ComplexFactoryUsage.Test002C</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="complexTest003">
+                  </a> <!-- complexTest003 -->
+                  <span class="method-name">complexTest003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="complexTest004">
+                  </a> <!-- complexTest004 -->
+                  <span class="method-name">complexTest004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ParallelWithBaseTest.Test002P</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test003">
+                  </a> <!-- test003 -->
+                  <span class="method-name">test003</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test004">
+                  </a> <!-- test004 -->
+                  <span class="method-name">test004</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+        </div> <!-- panel SuiteName -->
+        <div panel-name="test-xml-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/viren/Documents/workspace/ParallelUsage/testNg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SuiteName&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test name=&quot;TestName&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SimpleFactoryUsage.Test001&quot;/&gt;
+      &lt;class name=&quot;SimpleFactoryUsage.Test002&quot;/&gt;
+      &lt;class name=&quot;ComplexFactoryUsage.Test001C&quot;/&gt;
+      &lt;class name=&quot;ComplexFactoryUsage.Test002C&quot;/&gt;
+      &lt;class name=&quot;ParallelWithBaseTest.Test001P&quot;/&gt;
+      &lt;class name=&quot;ParallelWithBaseTest.Test002P&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestName --&gt;
+&lt;/suite&gt; &lt;!-- SuiteName --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestName (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SuiteName');
+function tableData_SuiteName() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'simpleTest004')
+data.setCell(0, 2, 'SimpleFactoryUsage.Test002')
+data.setCell(0, 3, 59);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'simpleTest003')
+data.setCell(1, 2, 'SimpleFactoryUsage.Test002')
+data.setCell(1, 3, 53);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'simpleTest002')
+data.setCell(2, 2, 'SimpleFactoryUsage.Test001')
+data.setCell(2, 3, 52);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'simpleTest001')
+data.setCell(3, 2, 'SimpleFactoryUsage.Test001')
+data.setCell(3, 3, 51);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'complexTest001')
+data.setCell(4, 2, 'ComplexFactoryUsage.Test001C')
+data.setCell(4, 3, 47);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'complexTest002')
+data.setCell(5, 2, 'ComplexFactoryUsage.Test001C')
+data.setCell(5, 3, 26);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test002')
+data.setCell(6, 2, 'ParallelWithBaseTest.Test001P')
+data.setCell(6, 3, 10);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test003')
+data.setCell(7, 2, 'ParallelWithBaseTest.Test002P')
+data.setCell(7, 3, 9);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'complexTest004')
+data.setCell(8, 2, 'ComplexFactoryUsage.Test002C')
+data.setCell(8, 3, 8);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'complexTest003')
+data.setCell(9, 2, 'ComplexFactoryUsage.Test002C')
+data.setCell(9, 3, 8);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test004')
+data.setCell(10, 2, 'ParallelWithBaseTest.Test002P')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test001')
+data.setCell(11, 2, 'ParallelWithBaseTest.Test001P')
+data.setCell(11, 3, 1);
+window.suiteTableData['SuiteName']= { tableData: data, tableDiv: 'times-div-SuiteName'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 326 ms</span>
+              <div id="times-div-SuiteName">
+              </div> <!-- times-div-SuiteName -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ParallelWithBaseTest.Test002P</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SimpleFactoryUsage.Test002</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">simpleTest003</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SimpleFactoryUsage.Test001</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">simpleTest001</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">simpleTest002</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SimpleFactoryUsage.Test002</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">simpleTest004</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ComplexFactoryUsage.Test001C</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">complexTest001</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">complexTest002</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ComplexFactoryUsage.Test002C</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">complexTest003</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">complexTest004</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ParallelWithBaseTest.Test001P</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void ParallelWithBaseTest.Test001P.test001())</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test001</span>
+                <span class="method-start">66 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void ParallelWithBaseTest.Test001P.test002())</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test002</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void ParallelWithBaseTest.Test001P.test001())</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ParallelWithBaseTest.Test002P</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void ParallelWithBaseTest.Test002P.test003())</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void ParallelWithBaseTest.Test002P.test004())</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test004</span>
+                <span class="method-start">77 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test003</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ParallelWithBaseTest.Test001P</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void ParallelWithBaseTest.Test001P.test002())</span>
+                <span class="method-start">80 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ParallelWithBaseTest.Test002P</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void ParallelWithBaseTest.Test002P.test004())</span>
+                <span class="method-start">80 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod(public void ParallelWithBaseTest.Test002P.test003())</span>
+                <span class="method-start">88 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ParallelWithBaseTest.Test001P</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SimpleFactoryUsage.Test001</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">73405 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

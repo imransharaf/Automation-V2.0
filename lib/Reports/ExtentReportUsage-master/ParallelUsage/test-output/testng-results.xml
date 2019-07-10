@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="135" started-at="2015-08-26T07:22:09Z" finished-at="2015-08-26T07:22:09Z">
+    <groups>
+    </groups>
+    <test name="TestName" duration-ms="135" started-at="2015-08-26T07:22:09Z" finished-at="2015-08-26T07:22:09Z">
+      <class name="SimpleFactoryUsage.Test002">
+        <test-method status="PASS" signature="simpleTest003()[pri:0, instance:SimpleFactoryUsage.Test002@57aabb39]" name="simpleTest003" duration-ms="53" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest003 -->
+        <test-method status="PASS" signature="simpleTest004()[pri:0, instance:SimpleFactoryUsage.Test002@57aabb39]" name="simpleTest004" duration-ms="59" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest004 -->
+      </class> <!-- SimpleFactoryUsage.Test002 -->
+      <class name="SimpleFactoryUsage.Test001">
+        <test-method status="PASS" signature="simpleTest002()[pri:0, instance:SimpleFactoryUsage.Test001@544a43d2]" name="simpleTest002" duration-ms="52" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest002 -->
+        <test-method status="PASS" signature="simpleTest001()[pri:0, instance:SimpleFactoryUsage.Test001@544a43d2]" name="simpleTest001" duration-ms="51" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest001 -->
+      </class> <!-- SimpleFactoryUsage.Test001 -->
+      <class name="ParallelWithBaseTest.Test002P">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test002P.test003()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="beforeMethod" is-config="true" duration-ms="6" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test002P.test004()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test004()[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="test004" duration-ms="2" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test004 -->
+        <test-method status="PASS" signature="test003()[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="test003" duration-ms="9" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test003 -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="afterMethod" is-config="true" duration-ms="21" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test002P.test004()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test002P@544bbff1]" name="afterMethod" is-config="true" duration-ms="6" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test002P.test003()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- ParallelWithBaseTest.Test002P -->
+      <class name="ComplexFactoryUsage.Test001C">
+        <test-method status="PASS" signature="complexTest001()[pri:0, instance:ComplexFactoryUsage.Test001C@9e9c826]" name="complexTest001" duration-ms="47" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complexTest001 -->
+        <test-method status="PASS" signature="complexTest002()[pri:0, instance:ComplexFactoryUsage.Test001C@9e9c826]" name="complexTest002" duration-ms="26" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complexTest002 -->
+      </class> <!-- ComplexFactoryUsage.Test001C -->
+      <class name="ParallelWithBaseTest.Test001P">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="beforeMethod" is-config="true" duration-ms="7" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test001P.test001()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test001()[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="test001" duration-ms="1" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test001 -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test001P.test002()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test002()[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="test002" duration-ms="10" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test002 -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="afterMethod" is-config="true" duration-ms="8" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test001P.test001()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="afterMethod" is-config="true" duration-ms="6" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ParallelWithBaseTest.Test001P.test002()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:ParallelWithBaseTest.Test001P@7d7fd835]" name="afterSuite" is-config="true" duration-ms="73277" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:SimpleFactoryUsage.Test001@544a43d2]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-08-26T12:53:22Z" finished-at="2015-08-26T12:53:22Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.removeChildTests(ExtentReports.java:173)
+	at com.relevantcodes.extentreports.ExtentReports.close(ExtentReports.java:161)
+	at SimpleFactoryUsage.Test001.afterSuite(Test001.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:ComplexFactoryUsage.Test001C@9e9c826]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-08-26T12:53:46Z" finished-at="2015-08-26T12:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ParallelWithBaseTest.Test001P -->
+      <class name="ComplexFactoryUsage.Test002C">
+        <test-method status="PASS" signature="complexTest003()[pri:0, instance:ComplexFactoryUsage.Test002C@53533bdf]" name="complexTest003" duration-ms="8" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complexTest003 -->
+        <test-method status="PASS" signature="complexTest004()[pri:0, instance:ComplexFactoryUsage.Test002C@53533bdf]" name="complexTest004" duration-ms="8" started-at="2015-08-26T12:52:09Z" finished-at="2015-08-26T12:52:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complexTest004 -->
+      </class> <!-- ComplexFactoryUsage.Test002C -->
+    </test> <!-- TestName -->
+  </suite> <!-- SuiteName -->
+</testng-results>
